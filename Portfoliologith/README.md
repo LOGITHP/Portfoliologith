@@ -205,8 +205,15 @@ Deploy the portfolio directly to the web using the official Firebase Hosting.
 > [!WARNING]  
 > **Crucial configuration for Vite + React projects:**  
 > When deploying to Firebase Hosting, you must set the public directory to `dist` (since Vite bundles the final production assets into `/dist`), **NOT** `public`. 
-> - If you run `firebase init` manually, select `dist` when asked for your public directory.
-> - The included [firebase.json](file:///firebase.json) file already has `"public": "dist"` pre-configured.
+> - **Do I need to copy files manually?** **No!** You do **not** need to manually copy or replace any files from `/dist` to `/public`. The configuration in [firebase.json](file:///firebase.json) tells the Firebase CLI to upload directly from the `/dist` folder.
+> - The included [firebase.json](file:///firebase.json) file already has `"public": "dist"` pre-configured, meaning `firebase deploy` will automatically upload everything inside `/dist` for you.
+
+> [!TIP]
+> **Still seeing the default "Firebase Hosting Setup Complete" welcome page?**  
+> This is a common issue caused by aggressive **browser caching** or **Firebase CDN caching** of the initial placeholder index page. 
+> 1. Try opening your URL in **Incognito / Private Window**.
+> 2. Force-reload the page to bypass cache: press **Ctrl + F5** (Windows/Linux) or **Cmd + Shift + R** (Mac).
+> 3. In the Chrome DevTools Network tab, check the **Disable cache** checkbox and reload the page.
 
 ### 1. Install Firebase CLI
 Install the Firebase command-line tools globally on your terminal:
