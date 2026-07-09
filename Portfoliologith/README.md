@@ -197,6 +197,7 @@ Below is the complete database schema layout if you want to initialize or inspec
 > - **Image URLs**: For fields supporting `imageUrl` and `screenshotUrl`, you can provide multiple URLs separated by commas. Google Drive sharing links are automatically detected and converted by the app's link converter helper.
 
 ---
+save this as jason file and import in realtime database structure
 
 ## 🚀 Deployment Guide (Firebase Hosting)
 
