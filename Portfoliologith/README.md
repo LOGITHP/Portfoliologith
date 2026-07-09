@@ -247,3 +247,23 @@ firebase deploy
 ```
 Once completed, Firebase will print the live URL of your portfolio website (e.g. `https://your-project.web.app`).
 
+---
+
+### 🛠️ Optional: Initializing Firebase from Scratch (`firebase init`)
+If you ever want to re-initialize or configure Firebase in this project from scratch, follow these steps:
+
+1. Delete any existing `firebase.json` and `.firebaserc` files from your project root.
+2. In your terminal, run:
+   ```bash
+   firebase init
+   ```
+3. Use the arrow keys and **Spacebar** to select the following services, then press **Enter**:
+   * `(*) Realtime Database: Configure a rules file for Realtime Database`
+   * `(*) Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Actions Deploys`
+4. When prompted, select the options below carefully:
+   * **Project setup**: Select `Use an existing project` and select your Firebase project ID.
+   * **Database rules**: Press **Enter** to accept the default rules file name `database.rules.json`.
+   * **Public directory**: Type **`dist`** and press **Enter** (Do **NOT** accept the default `public`!).
+   * **Single-page app rewrite**: Type **`y`** (Yes) and press **Enter**.
+   * **Automatic builds with GitHub**: Type **`n`** (No) and press **Enter**.
+   * **Overwrite existing files (if asked)**: Type **`n`** (No) to prevent overwriting your existing files.
