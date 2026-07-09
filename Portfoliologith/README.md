@@ -197,7 +197,19 @@ Below is the complete database schema layout if you want to initialize or inspec
 > - **Image URLs**: For fields supporting `imageUrl` and `screenshotUrl`, you can provide multiple URLs separated by commas. Google Drive sharing links are automatically detected and converted by the app's link converter helper.
 
 ---
-save this as jason file and import in realtime database structure
+
+### 📥 How to Import this Schema into Firebase Realtime Database
+To initialize your database with the structure above, follow these steps:
+1. **Copy the JSON block above** (starting with `{` and ending with `}`).
+2. Save it to a file on your computer named `database-initial.json`.
+3. Open your [Firebase Console](https://console.firebase.google.com/) and navigate to your project.
+4. In the left-hand menu, under **Build**, click **Realtime Database**.
+5. Go to the **Data** tab.
+6. Click the **three vertical dots** (menu/options icon) in the top-right corner of the data panel.
+7. Select **Import JSON**.
+8. Click **Browse**, select your `database-initial.json` file, and click **Import**.
+
+This will populate the database nodes instantly, enabling your site to load sections dynamically.
 
 ## 🚀 Deployment Guide (Firebase Hosting)
 
