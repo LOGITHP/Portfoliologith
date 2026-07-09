@@ -253,7 +253,7 @@ function App() {
       </main>
 
       <footer style={{ textAlign: 'center', padding: '1.5rem', borderTop: '1px solid var(--border-color)', marginTop: '2rem', color: 'var(--text-secondary)', fontSize: '0.9rem' }}>
-        <p>&copy; {new Date().getFullYear()} - LOGITH P</p>
+        <p>&copy; {new Date().getFullYear()} - Your Name</p>
       </footer>
     </div>
   );

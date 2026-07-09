@@ -9,7 +9,7 @@ export default function Hero({ isAdmin }) {
     name: 'Your Name',
     photoUrl: 'https://via.placeholder.com/150',
     logoUrl: '',
-    siteTitle: "LOGTIH'S PORTFOLIO",
+    siteTitle: "My Portfolio",
     slogan: '',
     isVisible: true
   });
@@ -28,7 +28,7 @@ export default function Hero({ isAdmin }) {
             name: val.name || 'Your Name',
             photoUrl: val.photoUrl || 'https://via.placeholder.com/150',
             logoUrl: val.logoUrl || '',
-            siteTitle: val.siteTitle || "LOGTIH'S PORTFOLIO",
+            siteTitle: val.siteTitle || "My Portfolio",
             slogan: val.slogan || '',
             isVisible: val.isVisible !== false
           });
